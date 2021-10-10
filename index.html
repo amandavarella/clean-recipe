@@ -3,16 +3,31 @@
 <head>
   <meta charset=utf-8>
   <title></title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="scripts/main.js"></script>
+
 
 </head>
 <body>
 
-  <textarea rows="20" cols="50" id=txt_input></textarea>
+
+  <div class="container">
+      <div class="comment">
+          <textarea id="txt_input" class="textinput"></textarea>
+      </div>
+  </div>
+  <br/><br/><br/><br/>
+  <div class="container">
+    <button onclick="clean_text(document.getElementById('txt_input').value)">Clean Text</button>
+  </div>
+  <div class="container">
+      <div class="comment">
+        <textarea id=txt_output class="textinput"></textarea>
+      </div>
+  </div>
   <br/>
-  <textarea  rows="20" cols="50"id=txt_output></textarea>
-  <br/>
-  <button onclick="clean_text(document.getElementById('txt_input').value)">Clean Text</button>
+
+
   
 </body>
 </html>
