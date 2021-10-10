@@ -28,7 +28,7 @@
 .textinput {
     float: left;
     width: 100%;
-    min-height: 75px;
+    min-height: 400px;
     outline: none;
     resize: none;
     border: 1px solid grey;
