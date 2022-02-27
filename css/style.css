@@ -1,46 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+  }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--color-white);
+    margin: 0;
+  }
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: 
+      url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+
+  /*centralises the content according to the viewports*/
+@media (min-width: 576px) {
 .container {
-    max-width: 820px;
-    margin: 0px auto;
-    margin-top: 50px;
+    max-width: 540px;
+}
 }
 
-.comment {
-    float: left;
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+}
+}
+
+.text-center {
+text-align: center;
+}
+
+.header {
+padding: 0 0.625rem;
+margin-bottom: 1.875rem;
+}
+
+  /* form */
+
+.whole-form {
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  
+  @media (min-width: 480px) {
+    .whole-form {
+      padding: 2.5rem;
+    }
+  }
+
+  .form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+  }
+
+  .input-textarea {
+    min-height: 120px;
     width: 100%;
-    height: auto;
-}
+    padding: 0.625rem;
+    resize: vertical;
+  }
 
-.commenter {
-    float: left;
-}
-
-.commenter img {
-    width: 35px;
-    height: 35px;
-}
-
-.comment-text-area {
-    float: left;
+  .submit-button {
+    display: block;
     width: 100%;
-    height: auto;
-}
-
-.textinput {
-    float: left;
-    width: 100%;
-    min-height: 400px;
-    outline: none;
-    resize: none;
-    border: 1px solid grey;
-}
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    height: 5rem;
+    padding: 0.75rem;
+    background: var(--color-green);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
   }

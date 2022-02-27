@@ -10,25 +10,28 @@
 </head>
 <body>
 
+<div class="container">
 
-  <div class="container">
-      <div class="comment">
-          <textarea id="txt_input" class="textinput"></textarea>
-      </div>
+  <header>
+    <h1 id="title" class="text-center">Clean Recipe</h1>
+  </header>
+
+  <div class="whole-form">
+    <div class="form-group">
+          <textarea id="txt_input" class="input-textarea" placeholder="Enter your steps or ingredients here..."></textarea>
+    </div>      
+  
+    <div class="form-group">
+        <textarea id="txt_output" class="input-textarea" placeholder="Text clean will appear here"></textarea>
+    </div>
+
+    <div  class="form-group">
+      <button id="submit" class="submit-button" onclick="clean_text(document.getElementById('txt_input').value)">Clean Recipe</button>
+    </div>
   </div>
 
 
-  <div  class="container">
-    <button class="button" onclick="clean_text(document.getElementById('txt_input').value)">Clean Text</button>
-  </div>
-
-
-  <div class="container">
-      <div class="comment">
-        <textarea id=txt_output class="textinput"></textarea>
-      </div>
-  </div>
-  <br/>
+</div>
 
 
   
