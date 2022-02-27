@@ -85,6 +85,15 @@ margin-bottom: 1.875rem;
     padding: 0.25rem;
   }
 
+
+button,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
   .input-textarea {
     min-height: 120px;
     width: 100%;
