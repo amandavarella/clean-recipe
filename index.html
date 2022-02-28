@@ -14,21 +14,25 @@
 <div class="container">
 
   <header>
-    <h1 id="title" class="text-center">Clean Recipe v1.1</h1>
+    <h1 id="title" class="text-center">Clean Recipe v1.2</h1>
   </header>
 
   <div class="whole-form">
     <div class="form-group">
+          <p>Ingredients or Steps</p>
           <textarea id="txt_input" class="input-textarea" placeholder="Enter your steps or ingredients here..."></textarea>
-    </div>      
-  
-    <div class="form-group">
-        <textarea id="txt_output" class="input-textarea" placeholder="Text clean will appear here"></textarea>
     </div>
 
     <div  class="form-group">
       <button id="submit" class="submit-button" onclick="clean_text(document.getElementById('txt_input').value)">Clean Recipe</button>
     </div>
+  
+    <div class="form-group">
+        <p>Results</p>
+        <textarea id="txt_output" class="input-textarea" placeholder="Text clean will appear here"></textarea>
+    </div>
+
+
   </div>
 
 
