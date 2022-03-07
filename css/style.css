@@ -112,3 +112,18 @@ textarea {
     border-radius: 2px;
     cursor: pointer;
   }
+
+  #buttons-container{
+    display:flex;
+    flex-direction: row;
+  }
+
+  #button-1{
+    width: 50%;
+    height: 50%;
+  }
+
+  #button-2{
+    width: 50%;
+    height: 50%;
+  }

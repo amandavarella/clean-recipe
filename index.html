@@ -21,8 +21,14 @@
           <textarea id="txt_input" class="input-textarea" placeholder="Enter your steps or ingredients here..."></textarea>
     </div>
 
-    <div  class="form-group">
-      <button id="submit" class="submit-button" onclick="clean_text(document.getElementById('txt_input').value)">Clean Recipe</button>
+    <div id="buttons-container">
+      <div id="button-1" class="form-group">
+        <button id="btn-clean-recipe" class="submit-button" onclick="clean_text(document.getElementById('txt_input').value)">Clean Recipe</button>
+      </div>
+
+      <div id="button-2" class="form-group">
+        <button id="btn-clear-fields" class="submit-button" onclick="clear_fields(document.getElementById('txt_input'),document.getElementById('txt_output'))">Clear Fields</button>
+      </div>
     </div>
   
     <div class="form-group">

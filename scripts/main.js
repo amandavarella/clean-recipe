@@ -15,4 +15,7 @@ function remove_enters(text){
     document.getElementById("txt_output").value=output;
   }
   
-  
+  function clear_fields(input, output){
+    input.value="";
+    output.value="";
+  }
