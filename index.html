@@ -15,15 +15,15 @@
   <div class="container-fluid">
     <body>
 
-        <header>
+        <header class="header">
           <h1 id="title" class="text-center">Clean Recipe v1.2</h1>
         </header>
 
-          <div class="row">
-            <textarea id="txt_input" class="form-control" placeholder="Enter your steps or ingredients here..."></textarea>
+          <div class="row form-group">
+            <textarea id="txt_input" class="form-control h-25" rows="5" placeholder="Enter your steps or ingredients here..."></textarea>
           </div>
 
-          <div id="buttons-container" class="row">
+          <div id="buttons-container" class="row form-group">
             <div id="button-1" class="col-xs-6">
               <button id="btn-clean-recipe" class="btn btn-primary btn-block" onclick="clean_text(document.getElementById('txt_input').value)">Clean Recipe</button>
             </div>
@@ -32,8 +32,8 @@
               <button id="btn-clear-fields" class="btn btn-primary btn-block" onclick="clear_fields(document.getElementById('txt_input'),document.getElementById('txt_output'))">Clear Fields</button>
             </div>
           </div>
-          <div class="row">
-            <textarea id="txt_output" class="form-control" placeholder="Text clean will appear here"></textarea>
+          <div class="row form-group">
+            <textarea id="txt_output" class="form-control h-25" rows="5" placeholder="Text clean will appear here"></textarea>
           </div>
     </body>
   </div>
